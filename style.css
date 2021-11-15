@@ -1,6 +1,10 @@
+* {
+    font-family: Helvetica, Arial, sans-serif
+}
+
 body {
     margin: 0;
-    min-height: 100vh;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -47,14 +51,6 @@ p {
     margin: 0px;
 }
 
-/* for testing image placement */
-img {
-    background-color: gray;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
-
 button {
     background-color: #3882F6;
     color: white;
@@ -62,6 +58,14 @@ button {
     padding: 4px 16px;
     border-style: solid;
     font-weight: bold;
+}
+
+.blue-border button {
+    border-color: #3882F6;
+}
+
+.white-border button {
+    border-color: #E5E7EB;
 }
 
 .hero-main-text {
@@ -77,9 +81,14 @@ button {
 }
 
 .information-header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    margin: 16px 0px;
 }
 
 .center-text {
@@ -118,8 +127,13 @@ button {
     flex: 1;
     gap: 64px;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.content-row.flex-start {
+    align-items: flex-start;
 }
 
 .content-column {
@@ -129,21 +143,30 @@ button {
     gap: 16px;
 }
 
+.content-column.horizontal-images {
+    gap: 0px;
+    flex: 2;
+}
+
+.content-column.description {
+    flex: 2;
+}
+
 .content-column .quote {
     flex: 0 1 auto;
     font-style: italic;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 36px;
+    font-weight: lighter;
+    margin-left: 64px;
+    margin-right: 64px;
 }
 
 .content-column .attribution {
     flex: none;
-    font-weight: bold;
+    font-size: 18px;
     text-align: right;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 64px;
+    margin-right: 64px;
 }
 
 .image-column {
@@ -156,9 +179,24 @@ button {
 
 .content-image {
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
+    padding: 16px;
+    flex: 1;
+}
+
+.header-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border-color: #F9FAF8;
+    border-style: solid;
+}
+
+.middle-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 .content-container-1 {
@@ -173,6 +211,7 @@ button {
 .content-container-2 {
     display: flex;
     flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px 64px;
@@ -181,7 +220,7 @@ button {
 .content-container-3 {
     display: flex;
     flex: 1;
-    background-color: #eee;
+    background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
 }
@@ -203,4 +242,8 @@ button {
     border-radius: 10px;
     color: white;
     background-color: #3882F6;
+}
+
+.modal * {
+    color: white;
 }
