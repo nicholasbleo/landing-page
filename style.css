@@ -58,6 +58,9 @@ button {
     padding: 4px 16px;
     border-style: solid;
     font-weight: bold;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
 }
 
 .blue-border button {
@@ -66,6 +69,8 @@ button {
 
 .white-border button {
     border-color: #E5E7EB;
+    margin-left: auto;
+    margin-right: 32px;
 }
 
 .hero-main-text {
@@ -125,7 +130,7 @@ button {
 .content-row {
     display: flex;
     flex: 1;
-    gap: 64px;
+    gap: 32px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -173,6 +178,7 @@ button {
     display: flex;
     flex: 1;
     flex-direction: column;
+    width: 200px;
     gap: 8px;
     align-items: center;
 }
@@ -205,7 +211,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #1F2937;
-    padding: 0px 64px;
+    padding: 32px 64px;
 }
 
 .content-container-2 {
@@ -214,7 +220,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 64px;
+    padding: 32px 64px;
 }
 
 .content-container-3 {
@@ -223,6 +229,7 @@ button {
     background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
+    padding: 32px 64px
 }
 
 .content-container-4 {
@@ -231,13 +238,13 @@ button {
     background-color: white;
     justify-content: center;
     align-items: center;
-    padding: 0px 64px;
+    padding: 16px 64px;
 }
 
 .content-row.modal {
     flex: 1;
     gap: 0px;
-    margin: 16px 32px;
+    margin: 32px 64px;
     padding: 16px;
     border-radius: 10px;
     color: white;
